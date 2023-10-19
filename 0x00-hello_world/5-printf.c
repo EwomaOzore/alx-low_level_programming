@@ -4,6 +4,7 @@
  * main - Entry point
  *
  * Description: Prints "with proper grammar, but the outcome is a piece of art,"
+ * within 80 characters.
  *
  * Return: Always 0 (Success)
  */
