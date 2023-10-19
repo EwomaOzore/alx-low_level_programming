@@ -1,28 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry point.
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
-	int i;
-	unsigned long fib1 = 1, fib2 = 2, next;
+    unsigned long int a = 1, b = 2, c, count = 0;
 
-	printf("%lu, %lu, ", fib1, fib2);
+    printf("%lu, %lu, ", a, b);
+    count = 2;  // Start with 2 numbers already printed.
 
-	for (i = 2; i < 98; i++)
-	{
-		next = fib1 + fib2;
-		printf("%lu", next);
-		if (i < 97)
-			printf(", ");
-		else
-			printf("\n");
-		fib1 = fib2;
-		fib2 = next;
-	}
+    while (count < 98)
+    {
+        c = a + b;
+        if (count == 97)
+        {
+            // Print the last number without a comma.
+            printf("%lu\n", c);
+        }
+        else
+        {
+            printf("%lu, ", c);
+        }
+        a = b;
+        b = c;
+        count++;
+    }
 
-	return (0);
+    return (0);
 }
