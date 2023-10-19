@@ -1,16 +1,21 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
     int n;
-    int first = 1, second = 2, next;
+    long first = 1, second = 2, next;
 
     for (n = 0; n < 50; n++)
     {
         if (n < 49)
-            printf("%d, ", first);
+            printf("%ld, ", first);
         else
-            printf("%d", first);
+            printf("%ld", first);
 
         next = first + second;
         first = second;
@@ -18,5 +23,5 @@ int main(void)
     }
 
     printf("\n");
-    return 0;
+    return (0);
 }
