@@ -1,22 +1,28 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
-    unsigned long int a = 1, b = 2, next, i;
+	int i;
+	unsigned long fib1 = 1, fib2 = 2, next;
 
-    printf("%lu, %lu, ", a, b);
+	printf("%lu, %lu, ", fib1, fib2);
 
-    for (i = 3; i <= 98; i++)
-    {
-        next = a + b;
-        a = b;
-        b = next;
+	for (i = 2; i < 98; i++)
+	{
+		next = fib1 + fib2;
+		printf("%lu", next);
+		if (i < 97)
+			printf(", ");
+		else
+			printf("\n");
+		fib1 = fib2;
+		fib2 = next;
+	}
 
-        if (i == 98)
-            printf("%lu\n", next);
-        else
-            printf("%lu, ", next);
-    }
-
-    return (0);
+	return (0);
 }
