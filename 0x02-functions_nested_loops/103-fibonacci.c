@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point.
+ *
+ * Return: 0 (Success)
+ */
 int main(void)
 {
     long int first = 1, second = 2, next, sum = 0;
