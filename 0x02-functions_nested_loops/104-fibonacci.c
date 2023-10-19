@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-    unsigned long int a = 1, b = 2, c, count = 0;
+    unsigned long a = 1, b = 2, c, count = 0;
 
     printf("%lu, %lu, ", a, b);
-    count = 2;  // Start with 2 numbers already printed.
+    count = 2;  /* Start with 2 numbers already printed. */
 
     while (count < 98)
     {
         c = a + b;
         if (count == 97)
         {
-            // Print the last number without a comma.
+            /* Print the last number without a comma. */
             printf("%lu\n", c);
         }
         else
