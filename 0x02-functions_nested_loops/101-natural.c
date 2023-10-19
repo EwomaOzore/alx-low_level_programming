@@ -13,7 +13,7 @@ int main(void)
         }
     }
 
-    printf("Sum of multiples of 3 or 5 below 1024: %d\n", sum);
+    printf("%d\n", sum);
 
     return (0);
 }
