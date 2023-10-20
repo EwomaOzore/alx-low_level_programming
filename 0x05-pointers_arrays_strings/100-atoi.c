@@ -1,12 +1,6 @@
 #include "main.h"
-#include <limits.h> /* Add this line to include the limits.h header */
+#include <limits.h>
 
-/**
- * _atoi - Converts a string to an integer.
- * @s: The string to convert.
- *
- * Return: The integer value.
- */
 int _atoi(char *s)
 {
     int i = 0;
@@ -14,7 +8,7 @@ int _atoi(char *s)
     int result = 0;
     int overflown = 0;
 
-    /* Handle leading spaces */
+    /* Skip leading spaces */
     while (s[i] == ' ')
         i++;
 
