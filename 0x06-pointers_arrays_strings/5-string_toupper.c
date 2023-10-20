@@ -9,16 +9,16 @@
  */
 char *string_toupper(char *str)
 {
-    char *ptr = str;
+	char *ptr = str;
 
-    while (*str)
-    {
-        if (islower(*str))
-        {
-            *str = toupper(*str);
-        }
-        str++;
-    }
+	while (*str)
+	{
+		if (islower(*str))
+		{
+			*str = toupper(*str);
+		}
+		str++;
+	}
 
-    return ptr;
+	return (ptr);
 }
