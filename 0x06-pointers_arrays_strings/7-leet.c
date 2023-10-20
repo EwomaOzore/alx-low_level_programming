@@ -8,24 +8,25 @@
  */
 char *leet(char *str)
 {
-    char *ptr = str;
-    char leet_chars[] = "aAeEoOtTlL";
-    char leet_replacements[] = "4433007711";
+	char *ptr = str;
+	char leet_chars[] = "aAeEoOtTlL";
+	char leet_replacements[] = "4433007711";
 
-    while (*str)
-    {
-        int i = 0;
-        while (leet_chars[i])
-        {
-            if (*str == leet_chars[i])
-            {
-                *str = leet_replacements[i];
-                break;
-            }
-            i++;
-        }
-        str++;
-    }
+	while (*str)
+	{
+		int i = 0;
 
-    return ptr;
+		while (leet_chars[i])
+		{
+			if (*str == leet_chars[i])
+			{
+				*str = leet_replacements[i];
+				break;
+			}
+			i++;
+		}
+		str++;
+	}
+
+	return (ptr);
 }
