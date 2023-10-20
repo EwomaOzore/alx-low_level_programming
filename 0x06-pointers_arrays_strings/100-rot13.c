@@ -8,20 +8,20 @@
  */
 char *rot13(char *str)
 {
-    char *ptr = str;
+	char *ptr = str;
 
-    while (*str)
-    {
-        char lowercase = (*str >= 'a' && *str <= 'z');
-        char uppercase = (*str >= 'A' && *str <= 'Z');
+	while (*str)
+	{
+		char lowercase = (*str >= 'a' && *str <= 'z');
+		char uppercase = (*str >= 'A' && *str <= 'Z');
 
-        if (lowercase || uppercase)
-        {
-            char base = (lowercase) ? 'a' : 'A';
-            *str = (char)((((*str - base) + 13) % 26) + base);
-        }
-        str++;
-    }
+		if (lowercase || uppercase)
+		{
+			char base = (lowercase) ? 'a' : 'A';
+			*str = (char)(((*str - base + 13) % 26) + base);
+		}
+		str++;
+	}
 
-    return ptr;
+	return (ptr);
 }
