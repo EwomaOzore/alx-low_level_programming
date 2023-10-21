@@ -2,9 +2,9 @@
 
 /**
  * main - causes an infinite loop
- * Return: 0
+ *
+ * Return: Always 0
  */
-
 int main(void)
 {
 	int i;
@@ -12,12 +12,13 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 
 	i = 0;
-	
-	// Comment out the while loop to prevent the infinite loop
-	// while (i < 10)
-	// {
-	//	putchar(i);
-	// }
+
+	/*
+	* while (i < 10)
+	* {
+	*	putchar(i);
+	* }
+	*/
 
 	printf("Infinite loop avoided! \\o/\n");
 
