@@ -9,7 +9,7 @@
  */
 void print_elem(int elem)
 {
-    printf("%d\n", elem);
+	printf("%d\n", elem);
 }
 
 /**
